@@ -96,14 +96,14 @@ nav a.active{
 }
 
 
-/* @keyframes hide-bars{
+@keyframes hide-bars{
     0% {
         transform: translateY(0);
     }
     100% {
         transform: translateY(-100%);
     }
-} */
+} 
 
 .bars-box.active .bar{
     animation: show-bars .5s ease-in-out both;
@@ -111,7 +111,7 @@ nav a.active{
 }
 
 
-/* @keyframes show-bars{
+@keyframes show-bars{
     0% {
         transform: translateY(-100%);
     }
@@ -119,7 +119,6 @@ nav a.active{
         transform: translateY(0);
     }
 }
- */
 
 section{ 
     position: absolute;
@@ -251,6 +250,7 @@ section.active{
     width: 32vw;
     height: 32vw;
     border-radius:50%;
+    padding: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,8 +261,8 @@ section.active{
 .home-img .img-box::after {
     content: '';
     position: absolute;
-    width: 50rem;
-    height: 50rem;
+    width: 80rem;
+    height: 80rem;
     background: conic-gradient(transparent, transparent, transparent, var(--main-color));
     transform: rotate(0deg);
     animation: rotate-border 10s linear infinite;
@@ -427,8 +427,6 @@ section.active{
 .resume-detail.active{
     display: block;
 }
-
-
 .resume-box .heading{
     text-align: left;
     font-size: 3.5rem;
